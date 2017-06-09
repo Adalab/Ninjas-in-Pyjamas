@@ -1,0 +1,150 @@
+.container_proyecto {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.header-gap {
+  height: 9vh;
+}
+.header {
+  width: 100%;
+}
+.articleTitles {
+  font-family: monospace;
+  font-size: 50px;
+  margin-bottom: 100px;
+  text-align: center;
+  margin-top: 10vh;
+}
+.info-article {
+  margin-left: 5%;
+  margin-right: 5%;
+  width: 90%;
+  text-align: justify;
+  font-size: 1em;
+  line-height: 2em;
+}
+.articleImages {
+  margin-top: 5vh;
+  width: 100%;
+}
+.paragraph-style {
+  width: 100%;
+  font-size: 1em;
+
+}
+
+.table {
+  width: 100%;
+  font-size: 1em;
+  border-collapse: collapse;
+}
+table, th, td {
+  border: 1px solid black;
+}
+th {
+  width: 30px;
+  text-align: center;
+  padding: 5px;
+}
+td{
+  text-align: center;
+  padding: 5px;
+}
+tr:nth-child(even) {
+  background-color: #f2f2f2
+}
+
+@media(min-width:735px){
+  .container{
+    justify-content: center;
+  }
+  .info-article {
+    max-width: 700px;
+    line-height: 1.7em;
+    font-size: 1em;
+    margin-bottom: 30px;
+  }
+  .paragraph-style {
+    margin-right: 15px;
+    width: 330px;
+    margin-top: 0;
+    font-size: 1em;
+    max-width: 700px;
+  }
+  .paragraph-divided {
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .articleImages {
+    width: 700px;
+  }
+  .list-information {
+    font-size: 0.9em;
+    max-width: 700px;
+  }
+  .table {
+    width: 700px;
+    font-size: 1em;
+    border-collapse: collapse;
+  }
+};
+@media(min-width:1024px){
+
+  .articleTitles {
+    font-size: 50px;
+    text-align: left;
+    line-height: 45px;
+    margin-bottom: 60px;
+  }
+  .info-article {
+    max-width: 600px;
+    line-height: 1.7em;
+    font-size: 1.4vw;
+  }
+  .articleImages {
+    width: 600px;
+  }
+  .paragraph-style {
+    margin-right: 3px;
+    width: 280px;
+    margin-top: 0;
+    font-size: 1.3vw;
+  }
+  .vertical-image {
+    width: 180px;
+    height: 304px;
+    margin-bottom: 10px;
+  }
+  .paragraph-photo {
+    width: 400px;
+    margin-top: 0;
+  }
+  .table {
+    width: 600px;
+    font-size: 1vw;
+    border-collapse: collapse;
+  }
+  table, th, td {
+    border: 1px solid black;
+  }
+  th {
+    width: 30px;
+    text-align: center;
+    padding: 5px;
+  }
+  td{
+    text-align: center;
+    padding: 5px;
+  }
+  tr:nth-child(even) {
+    background-color: #f2f2f2
+  }
+//   .table-responsive {
+//   overflow-x:auto;
+// }
+.list-information {
+  font-size: 0.9em;
+}
+};

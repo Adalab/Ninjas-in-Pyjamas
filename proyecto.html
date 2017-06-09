@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>El Proyecto</title>
+    <link rel="stylesheet" href="style/index.scss">
+    <meta name="viewport" content="width=device-width">
+  </head>
+  <body>
+
+    <header>
+      <div class="nav-mobile">
+        <a href="index.html">
+        <img class="nav-icon" src="images/icono.png" alt="icono navegador">
+      </a>
+        <a class="link" href="proyecto.html">El proyecto</a>
+        <img id="btnmenu" class="nav-icon btn-menu" src="images/Menu Desconectados.png" alt="Menu">
+      </div>
+        <div>
+        <ul class="list">
+          <li class="list-element"><a class="link list-element-link"href="turismo.html">Desconexion y turismo</a></li>
+          <li class="list-element"><a class="link list-element-link"href="poblacion.html">Desconexion y poblacion</a></li>
+          <li class="list-element"><a class="link list-element-link"href="servicios.html">Desconexion y servicios</a></li>
+          <li class="list-element"><a class="link list-element-link"href="proyecto.html">El proyecto</a></li>
+        </ul>
+        </div>
+
+
+      <div class="nav">
+        <a href="index.html">
+        <img class="nav-icon" src="images/icono.png" alt="icono navegador">
+      </a>
+        <ul class="list-pc">
+          <li class="list-element"><a class="link"href="turismo.html">Desconexion y turismo</a></li>
+          <li class="list-element"><a class="link"href="poblacion.html">Desconexion y poblacion</a></li>
+          <li id="current" class="list-element"><a class="link"href="servicios.html">Desconexion y servicios</a></li>
+        </ul>
+        <a class="link list-element"href="proyecto.html">El proyecto</a>
+      </div>
+      <div class="slide">
+        <img class="big_image" src="images/imagen_grande3.jpg" alt="foto">
+      </div>
+    </header>
+
+    <main class="container_proyecto">
+      <div class="header-gap">
+      </div>
+      <article class="info-article">
+        <h1 class="articleTitles">El proyecto</h1>
+        <p>El ‘desarrollo’ humano y la tendencia a concentrar los servicios en las ciudades ha ido dando
+          lugar a despoblamientos, incomunicaciones,...el círculo es recursivo: poblaciones dotadas de
+          pocos servicios o de difícil acceso cuyos lugareños abandonan para “mejorar” su calidad de vida
+          mientras que el despoblamiento no permite aumentar la dotación de servicios.</p>
+        <div class="paragraph-divided">
+          <div class="paragraph-style">En el proyecto Desconectados hemos querido primero identificar los lugares de España donde
+          se vive desconectado de servicios básicos, transporte público e Internet.
+          Para ello hemos creado un ‘índice de desconexión’ y a partir de aquí hemos
+          descubierto ‘historias de desconexión’.</div>
+          <div class="paragraph-style">El índice se ha aplicado en Aragón como territorio
+          piloto dado el elevado grado de disponibilidad de datos que existen para esta comunidad a partir
+          de su portal de datos abiertos (Aragón Open Data http://opendata.aragon.es) y el potencial
+          de desconexión del territorio.</div>
+        </div>
+        <h1 class="articleTitles">Los datos</h1>
+        <p>Para aplicar el índice de desconexión en la Comunidad de Aragón se han tenido en cuenta datos
+        oficiales sobre cada uno de los parámetros que conforman el índice.
+        </p>
+        <div class="table-responsive">
+        <table class="table">
+          <tr>
+            <th>Datos</th>
+            <th>Fuente</th>
+            <th>Año</th>
+          </tr>
+          <tr>
+            <td>Infraestructura sanitaria</td>
+            <td>Instituto Argonés de Estadística(Gobierno de Aragon - Aragon Open Data)</td>
+            <td>2014</td>
+          </tr>
+          <tr>
+            <td>Servicios Educativos</td>
+            <td>Secretaría General Técnica de Educación, Cultura y Deporte (Gobierno de Aragon - Aragon Open Data)</td>
+            <td>2015</td>
+          </tr>
+          <tr>
+            <td>Paradas autobús</td>
+            <td>Dirección General de Movilidad e Infraestructuras (Gobierno de Aragon - Aragon Open Data)</td>
+            <td>2014</td>
+          </tr>
+          <tr>
+            <td>Conectividad de zonas blancas</td>
+            <td>Dirección General de Telecomunicaciones y Tecnologías de la Información (Gobierno de España)</td>
+            <td>2017</td>
+          </tr>
+          <tr>
+            <td>Límites municipales (ETRS8930N)</td>
+            <td>Dirección General de Administración Local (Gobierno de Aragon - Aragon Open Data)</td>
+            <td>2017</td>
+          </tr>
+        </table>
+      </div>
+        <h1 class="articleTitles">El análisis</h1>
+        <p>Para llevar a cabo el análisis se ha utilizado una metodología basada en Sistemas de Información
+          Geográfica (SIG) a partir del software SIG libre QGIS. Por lo que a partir del denominador común
+          que ha sido la base cartográfica de los municipios de Aragón se han asociado las diferentes
+          variables que conforman el índice de desconexión.</p>
+        <p>Las operaciones de tratamiento de datos que permite los SIG han dado lugar a la caracterización
+          de cada uno de los municipios según su dotación de servicio (presencia o no de centros educativos,
+          de centros de salud, de parades de autobús...o conectividad a Internet). Así mismo, las operaciones
+          de análisis de los SIG ha permitido establecer un valor de subíndices de desconexión, según si la
+          desconexión viene dada por la falta de acceso a:
+        </p>
+        <ul>
+          <li class="list-information">Internet, a partir de la determinación de zonas blancas, estos es, «aquellas zonas que no disponen
+            de cobertura de redes de banda ancha de nueva generación, ni previsiones para su dotación por algún
+            operador en el plazo de 3 años, en base a planes de inversión creíbles» (Dirección General de
+            Telecomunicaciones y Tecnologías de la Información - Gobierno de España)</li>
+          <li class="list-information">Servicios: sanitarios (centros de salud, consultorios y farmacias) o de educación
+            (centros educativos públicos) y culturales.</li>
+          <li class="list-information">Medio de transporte público, según disponibilidad de paradas de autobús vigentes.</li>
+        </ul>
+        <div class="paragraph-divided">
+          <div class="paragraph-style">La identificación de aquellos municipios de Aragón más desconectados,
+            se ha realizado mediante una operación SIG de intersección espacial de las tres capas de
+            información resultado de cada subíndice.</div>
+          <div class="paragraph-style">La intersección de los valores más significativamente elevados de
+            cada subíndice ha dado como resultado 193 municipios. Destacando de entre estos los 3 municipios
+            que tendrían los valores más elevados: Fombuena, Fanlo, y Purujosa.</div>
+        </div>
+        <img class="articleImages"src="images/diagrama.png" alt="">
+        <h1 class="articleTitles">El equipo</h1>
+        <ul>
+          <li>Andrea</li>
+          <li>Tania Hirsch</li>
+          <li>Víctor Aertsen</li>
+          <li>Laura Olivas</li>
+          <li>Rosa Olivella</li>
+          <li>Óscar Maeso</li>
+          <li>Josep Sitjar</li>
+          <li>Gemma Boix</li>
+          <li>Toni Hernández</li>
+        </ul>
+        <p>Mentores</p>
+        <ul>
+          <li>Nacho García</li>
+        </ul>
+      </main>
+      <footer>
+        <p class="footerParagraph">Lorem ipsum dolor sit amet, consectetur adipisicing elit</p>
+        <div class="footer-icons">
+          <img class="icons"src="images/LOGO_MEDIALAB.jpg" alt="">
+          <img class="icons"src="images/logo_sigte.png" alt="">
+          <img class="icons"src="images/logo-datalab.jpg" alt="">
+        </div>
+      </footer>
+      <script type="text/javascript" src="main.js">
+        </script>
+    </body>
+  </html>
